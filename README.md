@@ -18,7 +18,13 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/NobitaAYUSH/ALSPAM.git)
 
 </details>
+<summary><b>REQUIRED THINGS</b></summary>
+<br>
 
+🥀 JOIN THE GROUP OF NOBITA 🦋
+🥀https://t.me/MRITYUY
+🥀10 BOTS TOKEN 
+🥀OWNER ID 🆔
 
 <details>
 <summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
