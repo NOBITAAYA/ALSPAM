@@ -21,10 +21,10 @@ from datetime import datetime
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        jarvis = await e.reply(f" 🇴𝗫𝗬𝗚𝗘𝗡")
+        jarvis = await e.reply(f" 🇳OBITA")
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await jarvis.edit(f"🇴𝗫𝗬𝗚𝗘𝗡🤖\n» `{mp} ᴍꜱ`")
+        await jarvis.edit(f"🇳OBITA🥀🤖\n» `{mp} ᴍꜱ`")
 
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -39,7 +39,7 @@ async def ping(e):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"`🇴𝗫𝗬𝗚𝗘𝗡 𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚.`")
+        await e.reply(f"`🇳OBITA🥀 PAPA 𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗜𝗡𝗚.`")
         try:
             await X1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ async def addsudo(event):
         Heroku = heroku3.from_key(HEROKU_API_KEY)
         sudousers = getenv("SUDO_USERS", default=None)
 
-        ok = await event.reply(f"» 🇴𝗫𝗚𝗘𝗡 𝗡𝗘𝗪 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 𝗔𝗗𝗗𝗘𝗗__")
+        ok = await event.reply(f"» 🇳OBITA 𝗡𝗘𝗪 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥 𝗔𝗗𝗗𝗘𝗗__")
         target = ""
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
@@ -117,7 +117,7 @@ async def addsudo(event):
             return
 
         if str(target) in sudousers:
-            await ok.edit(f"🇴𝗫𝗬𝗚𝗘𝗡 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥. !!")
+            await ok.edit(f",🇳OBITA 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥. !!")
         else:
             if len(sudousers) > 0:
                 newsudo = f"{sudousers} {target}"
@@ -127,7 +127,7 @@ async def addsudo(event):
             heroku_var["SUDO_USERS"] = newsudo    
     
     elif event.sender_id in SUDO_USERS:
-        await event.reply("» 🇴𝗫𝗬𝗚𝗘𝗡'𝗦 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗚𝗜𝗩𝗘 𝗦𝗨𝗗𝗢...")
+        await event.reply("» 🇳obita🥀'𝗦 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗚𝗜𝗩𝗘 𝗦𝗨𝗗𝗢...")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%sremovesudo(?: |$)(.*)" % hl))
@@ -166,7 +166,7 @@ async def removesudo(event):
             await ok.edit(f"Removed sudo user: `{target}`")
             heroku_var["SUDO_USERS"] = new_sudo_users
     else:
-        await event.reply("𝗢𝗡𝗟𝗬 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗥𝗘𝗠𝗢𝗩𝗘 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦.")
+        await event.reply("🇳OBITA'S 𝗢𝗪𝗡𝗘𝗥 𝗖𝗔𝗡 𝗥𝗘𝗠𝗢𝗩𝗘 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦.")
 
 @X1.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
 @X2.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
@@ -180,9 +180,9 @@ async def removesudo(event):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%ssudos(?: |$)(.*)" % hl))
 async def show_sudo_users(event):
     if event.sender_id == OWNER_ID:
-        sudo_users_list = "🇴𝗫𝗬𝗚𝗘𝗡 𝗖𝗨𝗥𝗥𝗘𝗡𝗧 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦 𝗟𝗜𝗦𝗧:\n"
+        sudo_users_list = "🇳OBITA 𝗖𝗨𝗥𝗥𝗘𝗡𝗧 𝗦𝗨𝗗𝗢 𝗨𝗦𝗘𝗥𝗦 𝗟𝗜𝗦𝗧:\n"
         for user_id in SUDO_USERS:
             sudo_users_list += f"- {user_id}\n"
         await event.reply(sudo_users_list)
     else:
-        await event.reply("🇴𝗡𝗟𝗬 𝗙𝗢𝗥 🇴𝗫𝗬𝗚𝗘𝗡 𝗢𝗪𝗡𝗘𝗥.")
+        await event.reply("🇴𝗡𝗟𝗬 𝗙𝗢𝗥 🇳OBITA 𝗢𝗪𝗡𝗘𝗥.")
