@@ -32,7 +32,7 @@ async def start(event):
         bot_id = AltBot.id
         TEXT = (
             f"Hey [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nI am [{bot_name}](tg://user?id={bot_id})\n"
-            f"My developer: [𝗢𝗫𝗬𝗚𝗘𝗡](https://t.me/PRADHAN474)\n"
+            f"My developer: [NOBITA](https://t.me/MRITYUY)\n"
             f"Xbots version: M3.3\n"
             f"Python version: 3.11.3\n"
             f"Telethon version: {version}\n"
