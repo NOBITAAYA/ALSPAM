@@ -7,11 +7,11 @@ START_BUTTON = [
         Button.inline("COMMNDS", data="help_back")
     ],
     [
-        Button.url("CHANNEL", "https://t.me/BWANDARLOK"),
-        Button.url("SUPPORT", "https://t.me/PRADHAN474")
+        Button.url("CHANNEL", "https://t.me/MRITYUY"),
+        Button.url("SUPPORT", "https://t.me/MRITYUY")
     ],
     [
-        Button.url("REPO", "https://github.com/PRADHAN474/ALSPSM")
+        Button.url("REPO", "https://t.me/MRITYUY")
     ]
 ]
 
@@ -39,7 +39,7 @@ async def start(event):
         )
         await event.client.send_file(
                     event.chat_id,
-                    "https://telegra.ph/file/4817f954943e137e0413c.jpg",
+                    "https://telegra.ph/file/451182063e3670fa369d9.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
