@@ -22,7 +22,7 @@ def load_plugins(plugin_name):
     load.logger = logging.getLogger(plugin_name)
     spec.loader.exec_module(load)
     sys.modules["AltBots.modules." + plugin_name] = load
-    print("𝗢𝗫𝗬𝗚𝗘𝗡 𝗛𝗔𝗦 𝗜𝗠𝗣𝗢𝗥𝗧𝗘𝗗 " + plugin_name)
+    print("NOBITA 𝗛𝗔𝗦 𝗜𝗠𝗣𝗢𝗥𝗧𝗘𝗗 " + plugin_name)
 
 
 files = glob.glob("AltBots/modules/*.py")
